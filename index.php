@@ -17,10 +17,10 @@
     $chiamata = $_GET['password'];
 
     //Se la mia ricerca password= ha dato questi risultati....
-    if (empty($chiamata)) {
+    if (empty($chiamata)) { //Se è vuota...
         echo $null;
     } else
-    if (strpos($chiamata, 'Boolean') !== false) {
+    if (strpos($chiamata, 'Boolean') !== false) { //Se include 'Boolean'....
         echo $green;
     } else{
         echo $red;
